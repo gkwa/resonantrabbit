@@ -1,0 +1,40 @@
+diff --git a/example.py b/example.py
+index 1234567..abcdefg 100644
+--- a/example.py
++++ b/example.py
+@@ -1,8 +1,10 @@
+ def hello():
+     print("Hello, World!")
++
+ def goodbye():
+     print("Goodbye!")
+-
++    
++    # Added some spacing
+ def main():
+-    hello()
+-    goodbye()
++    hello() 
++    goodbye()
+diff --git a/config.txt b/config.txt
+index 9876543..fedcba9 100644
+--- a/config.txt
++++ b/config.txt
+@@ -1,6 +1,4 @@
+ # Configuration file
+ setting1=value1
+-
+ setting2=value2
+-
+ setting3=value3
+diff --git a/newfile.md b/newfile.md
+new file mode 100644
+index 0000000..1234567
+--- /dev/null
++++ b/newfile.md
+@@ -0,0 +1,5 @@
++# New File
++
++This is a new markdown file.
++
++It has some empty lines.
