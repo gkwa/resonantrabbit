@@ -19,7 +19,7 @@ This project demonstrates parsing git patches using the Python unidiff library, 
 ├── testdata/                  # Test patch files
 │   ├── empty_lines.patch      # Patch with empty line changes
 │   └── simple.patch           # Simple patch for basic tests
-├── requirements.txt           # Python dependencies
+├── pyproject.toml             # Project configuration and dependencies
 └── README.md                  # This file
 ```
 
@@ -27,17 +27,17 @@ This project demonstrates parsing git patches using the Python unidiff library, 
 
 ### Install dependencies
 ```bash
-pip install -r requirements.txt
+uv sync
 ```
 
 ### Run the main demonstration
 ```bash
-python main.py
+uv run python main.py
 ```
 
 ### Run tests
 ```bash
-pytest test_unidiff_parsing.py -v
+uv run pytest test_unidiff_parsing.py -v
 ```
 
 ## Test Features
